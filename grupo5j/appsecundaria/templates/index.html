@@ -9,6 +9,12 @@
 </head>
 <body>
     <h1>Holaa</h1>
+    <h1>Camila Rodriguez</h1>
+    <HR>
+        {% for i in objeto %}
+         <li> <a href="alumno/{{i.id}}">{{i.nombre}}</a> </li>
+        {% endfor %}
+    </HR>
     <script src="{% static 'script.js' %}"></script>
 </body>
 </html>
